@@ -32,15 +32,24 @@ namespace Array
                 array[counter] = plus2;
             }
 
-            Console.WriteLine("Index"+ "Value" + "8"); //headings
+            Console.WriteLine("Index"+ " Value" + "   8"); //headings
 
             //output each array element's value
             for (var counter = 0; counter < array.Length; counter++)
             {
-                Console.WriteLine(counter + "   " + array[counter]);
+                Console.WriteLine(counter + "      " + array[counter]);
             }
 
+            //initializer list specifies the vale of each element
+            int[] arrayInt = {89, 98, 32, 56, 91, 87};
 
+            Console.WriteLine("Index" + " Value" + "    8"); //headings
+
+            //output each array elements value
+            for (int counter = 0; counter < arrayInt.Length; counter++)
+            {
+                Console.WriteLine(counter + "      " + arrayInt[counter]);
+            }
         }
     }
 }
