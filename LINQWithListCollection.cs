@@ -11,15 +11,20 @@ namespace Array
         static void Main(string[] args)
         {
             //populate list of strings
-            var groceryListItems = new List<string>();
-            groceryListItems.Add("Milk");
-            groceryListItems.Add("cereal");
-            groceryListItems.Add("Butter");
-            groceryListItems.Add("oranges");
+            string[] groceryListItems = new string[5];
+            groceryListItems[0] = "cereal";
+            groceryListItems[1] = "milk";
+            groceryListItems[3] = "Butter";
+            groceryListItems[4] = "oranges";
 
-            for (int counter = 0; counter < groceryListItems.Count; counter++)
+            for (int counter = 0; counter < groceryListItems.Length; counter++)
             {
-                Console.WriteLine($"{counter}{groceryListItems[counter]}");
+                Console.WriteLine(groceryListItems[counter]);
+            }
+
+            foreach (var item in groceryListItems)
+            {
+                Console.WriteLine(item.ToString());
             }
 
         }
