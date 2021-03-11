@@ -69,7 +69,31 @@ namespace Array
                 Console.WriteLine(count + "   " + arrayValue[count]);
           
             }
+            //initialize 
+            int[] arraySum = {87, 68, 94, 100, 83, 78, 85, 91, 76, 87};
+            int total = 0; 
 
+            //calculate the sum
+            for (int counter = 0; counter < arraySum.Length; counter++)
+            {
+                total += arraySum[counter];
+
+            }
+
+            //print out the 
+            Console.WriteLine("The sum is:" + total);
+
+            //initialize 
+            int[] arraySum1 = { 87, 68, 94, 100, 83, 78, 85, 91, 76, 87 };
+            int total1 = 0;
+
+            //using a for each to calculate sum
+            foreach (var counter in arraySum)
+            {
+                total1 += counter;
+            }
+
+            Console.WriteLine(total1);
         }
     }
 }
