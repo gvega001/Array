@@ -94,6 +94,7 @@ namespace Array
             }
 
             Console.WriteLine(total1);
+
         }
     }
 }
