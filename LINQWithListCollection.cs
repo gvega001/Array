@@ -22,10 +22,24 @@ namespace Array
                 Console.WriteLine(groceryListItems[counter]);
             }
 
-            foreach (var item in groceryListItems)
+
+            int[] array = new int[5]; // array contains 5 int elements
+            int plus2 = 0;
+            for (var counter = 0; counter < array.Length; counter++)
             {
-                Console.WriteLine(item.ToString());
+                
+                    plus2 += 2;
+                array[counter] = plus2;
             }
+
+            Console.WriteLine("Index"+ "Value" + "8"); //headings
+
+            //output each array element's value
+            for (var counter = 0; counter < array.Length; counter++)
+            {
+                Console.WriteLine(counter + "   " + array[counter]);
+            }
+
 
         }
     }
