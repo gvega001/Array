@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,6 +11,7 @@ namespace Array
     {
         static void Main(string[] args)
         {
+            const int ArrayLength = 5; 
             //populate list of strings
             string[] groceryListItems = new string[5];
             groceryListItems[0] = "cereal";
@@ -50,6 +52,24 @@ namespace Array
             {
                 Console.WriteLine(counter + "      " + arrayInt[counter]);
             }
+
+            //create the array using the const for length
+            int[] arrayValue = new int[ArrayLength];
+
+            //calculate value for each array
+            for (int counter = 0; counter < arrayValue.Length; counter++)
+            {
+                arrayValue[counter] = 2 + 2 * (counter);
+            }
+            //Heading
+            Console.WriteLine("Index"+ "   Value");
+            //print out the array values calculated
+            for (int count = 0; count < arrayValue.Length; count++)
+            {
+                Console.WriteLine(count + "   " + arrayValue[count]);
+          
+            }
+
         }
     }
 }
